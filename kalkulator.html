@@ -9,7 +9,9 @@
 	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">	
 	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
-	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="main.css">
 	
 	<!--[if lt IE 9]>
@@ -19,14 +21,24 @@
 </head>
 
 <body>
+	<div id="container">
+		<div id="center">
+			<div id="form">
+				<h2>Kalkulator BMI</h2>
+				<label>Masa:</label><br>
+				<input type="text" id="masa"><br>
+				<label>Wzrost(cm/m):</label><br>
+				<input type="text" id="wzrost">
+				<select id="option">
+					<option value="cm">cm</option>
+					<option value="m">m</option>
+				</select><br>
+				<input type="button" value="Oblicz BMI" id="przycisk" onclick="oblicz('#wynik')">
+				<div id="wynik"></div>
+			</div>
+		</div>
+	</div>
 	
-	<main>
-	<article>
-		
-
-		
-	</article>	
-	</main>
 	
 	<script src="skrypt.js"></script>
 
